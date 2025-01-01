@@ -22,13 +22,13 @@ const gridHelper = new THREE.GridHelper(200, 50);
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
 const material = new THREE.MeshStandardMaterial({color: 0xffa8f7});
 const torus = new THREE.Mesh(geometry, material);
-const derakumaTexture = new THREE.TextureLoader().load('derakuma.png');
+const derakumaTexture = new THREE.TextureLoader().load('/images/derakuma.png');
 const derakuma = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
   new THREE.MeshBasicMaterial({map: derakumaTexture, color: 0xffffff})
 );
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg')
+const moonTexture = new THREE.TextureLoader().load('/images/moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('/images/normal.jpg')
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
   new THREE.MeshStandardMaterial({map: moonTexture, normalMap: normalTexture, color: 0xffffff})
