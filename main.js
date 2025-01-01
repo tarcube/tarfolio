@@ -1,6 +1,6 @@
 import './style.css';
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/Addons.js';
+import * as THREE from 'node_modules/three/build/three.module.js';
+import { OrbitControls } from 'node_modules/three/examples/jsm/controls/OrbitControls.js';
 
 // CS115 has cursed my programming style
 // Also if you are reading this hi please don't steal my keys
