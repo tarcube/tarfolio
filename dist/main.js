@@ -1,6 +1,6 @@
 import './style.css';
-import * as THREE from 'https://cdn.skypack.dev/three@0.128.0/build/three.module.js';
-import { OrbitControls } from 'https://cdn.skypack.dev/three@0.128.0/examples/jsm/controls/OrbitControls.js';
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 // CS115 has cursed my programming style
 // Also if you are reading this hi please don't steal my keys
@@ -17,8 +17,8 @@ renderer.render(scene, camera);
 const pointLight = new THREE.PointLight(0xffffff, 2000);
 pointLight.position.set(20, 20, 20);
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
-const lightHelper = new THREE.PointLightHelper(pointLight);
-const gridHelper = new THREE.GridHelper(200, 50);
+// const lightHelper = new THREE.PointLightHelper(pointLight);
+// const gridHelper = new THREE.GridHelper(200, 50);
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
 const material = new THREE.MeshStandardMaterial({color: 0xffa8f7});
 const torus = new THREE.Mesh(geometry, material);
