@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('https://discordstyles.github.io/discord-dyslexia/src/font/OpenDyslexic-Regular.woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('https://discordstyles.github.io/discord-dyslexia/src/font/OpenDyslexic-Italic.woff');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('https://discordstyles.github.io/discord-dyslexia/src/font/OpenDyslexic-Bold.woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('https://discordstyles.github.io/discord-dyslexia/src/font/OpenDyslexic-BoldItalic.woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
+
+  font-family: OpenDyslexic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  display: inline;
+}
+
+h8 {
+  font-size: 1rem;
+}
+
+h9 {
+  font-size: 0.5rem;
+}
+
+header {
+  background: var(--dark-bg);
+  grid-column: 2 / span 5;
+  font-size: 2.0rem;
+  padding: 1.0rem;
+  margin-bottom: var(--spacing);
+}
+
+section {
+  grid-column: 2 / 8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
+
+blockquote {
+  margin: 1.0rem;
+  padding: 1.0rem;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+}
+
+blockquote p {
+  color: black;
+  background-color: white;
+  font-size: 4rem;
+  display: inline;
+  line-height: 1;
+}
+
+.left {
+  grid-column: 6 / 12;
+}
